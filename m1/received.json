@@ -1,0 +1,27 @@
+{
+  "event_id":1231231,
+  "event_state":"Received",
+  "event_unix":1628564284,
+  "event_message":{
+    "order_id":1993821,
+    "total":144,
+    "customer":{
+      "email":"foo@bar.com",
+      "first_name":"Foo",
+      "last_name":"Bar",
+      "shipping_address": {
+        "street_address": "the street 1",
+        "city": "city",
+        "state": "state",
+        "country": "the world",
+        "zip_code": "1231221"
+      }
+    },
+    "products": [{
+      "product_id":1231,
+      "price":12,
+      "product_name":"something",
+      "quantity": 12
+    }]
+  }
+}

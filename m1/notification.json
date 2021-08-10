@@ -1,0 +1,10 @@
+{
+  "event_id": 12312512,
+  "event_state": "Notification",
+  "event_unix": 1628564290,
+  "event_message":{
+    "to":"foo@bar.com",
+    "subject":"Order received",
+    "body":"Your order (id 1231232) state is received so apparently it is in your hands, contact us if you haven't received your order. Cheers!"
+  }
+}
