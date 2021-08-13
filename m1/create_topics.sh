@@ -7,32 +7,32 @@ $KAFKA_HOME/bin/kafka-topics.sh --create \
     --replication-factor 1 \
     --partitions 1 \
     --config retention.ms=259200000 \
-    --topic order_received
+    --topic order-received
 
 $KAFKA_HOME/bin/kafka-topics.sh --create \
     --bootstrap-server localhost:9092 \
     --replication-factor 1 \
     --partitions 1 \
     --config retention.ms=259200000 \
-    --topic order_confirmed
+    --topic order-confirmed
 
 $KAFKA_HOME/bin/kafka-topics.sh --create \
     --bootstrap-server localhost:9092 \
     --replication-factor 1 \
     --partitions 1 \
     --config retention.ms=259200000 \
-    --topic order_ready
+    --topic order-ready
 
 $KAFKA_HOME/bin/kafka-topics.sh --create \
     --bootstrap-server localhost:9092 \
     --replication-factor 1 \
     --partitions 1 \
     --config retention.ms=259200000 \
-    --topic order_notification
+    --topic order-notification
 
 $KAFKA_HOME/bin/kafka-topics.sh --create \
     --bootstrap-server localhost:9092 \
     --replication-factor 1 \
     --partitions 1 \
     --config retention.ms=259200000 \
-    --topic order_error
+    --topic order-error
