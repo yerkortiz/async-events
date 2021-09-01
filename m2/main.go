@@ -1,15 +1,15 @@
 package main
 
 import (
-	"log"
-	"os"
+	"fmt"
+	"net/http"
 )
 
-func init() {
-
-	log.SetOutput(os.Stdout)
-	log.Print("Basic Microservice and Kafka Event Publisher")
-
-}
 func main() {
+	http.HandleFunc("/", handler)
+	http.ListenAndServe(":8080", nil)
+}
+
+func handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello World!")
 }
