@@ -10,6 +10,6 @@ import (
 
 func RunServer() {
 	r := mux.NewRouter()
-	r.HandleFunc("/hello", m2.HealthCheck).Methods("GET")
+	r.HandleFunc("/health-check", m2.HealthCheck).Methods("GET")
 	http.ListenAndServe(":8080", r)
 }
