@@ -1,17 +1,10 @@
 package main
 
-import (
-	"net/http"
+import "milestone2/server"
 
-	"github.com/gorilla/mux"
-)
+func init() {
 
-func main() {
-	r := mux.NewRouter()
-	r.HandleFunc("/hello", HealthCheck).Methods("GET")
-	http.ListenAndServe(":8080", r)
 }
-
-func HealthCheck(w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.StatusOK)
+func main() {
+	server.RunServer()
 }
